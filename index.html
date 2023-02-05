@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>X-AIR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="xlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="/xlogo.png" alt="Bootstrap" width="30" height="24">
+                <a class="navbar-brand" href="#">X-AIR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acount</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Alerts</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Flights
+                    </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Airports</a></li>
+                                <li><a class="dropdown-item" href="#">Airlines</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Countries / Regions</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="input-group" data-bs-theme="dark" style="padding: 300px 820px 0 120px; ">
+
+
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Search">
+            <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></span>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+    <h2 style="padding:30px 0 10px 7px;"> Let's look for flights : </h2>
+
+    <form class="row gx-3 gy-2 align-items-center">
+        <div class="col-sm-3">
+            <label class="visually-" for="specificSizeSelect" style="font-weight: bold; color:rgb(58, 66, 114);">From</label>
+            <select class="form-select" id="specificSizeSelect" fdprocessedid="c73zm">
+          <option selected="" >Choose..</option>
+          <option value="1">Cairo</option>
+          <option value="2">Mecca</option>
+          <option value="3">Dubai</option>
+          <option value="4">Qatar</option>
+          <option value="5">Kuwait</option>
+          <option value="6">Jordan</option>
+          <option value="7">Türkiye</option>
+          <option value="8">Paris</option>
+          <option value="9">Denmark</option>
+          <option value="10">Swesra</option>
+          <option value="11">New Zealand</option>
+          <option value="12">Korean</option>
+          <option value="13">Ireland</option>
+          <option value="14">Sweden</option>
+          <option value="15">Romania</option>
+          <option value="16">Norway</option>
+        </select>
+        </div>
+
+        </div>
+        <div class="col-sm-3">
+            <label class="visually-" for="specificSizeSelect" style="font-weight: bold; color:rgb(58, 66, 114)">To</label>
+            <select class="form-select" id="specificSizeSelect" fdprocessedid="c73zm">
+              <option selected="">Choose..</option>
+          <option value="1">Cairo</option>
+          <option value="2">Mecca</option>
+          <option value="3">Dubai</option>
+          <option value="4">Qatar</option>
+          <option value="5">Kuwait</option>
+          <option value="6">Jordan</option>
+          <option value="7">Türkiye</option>
+          <option value="8">Paris</option>
+          <option value="9">Denmark</option>
+          <option value="10">Swesra</option>
+          <option value="11">New Zealand</option>
+          <option value="12">Korean</option>
+          <option value="13">Ireland</option>
+          <option value="14">Sweden</option>
+          <option value="15">Romania</option>
+          <option value="16">Norway</option>
+            </select>
+        </div>
+
+        <div class="col-sm-3">
+            <label class="visually-" for="specificSizeInputName" style="font-weight: bold; color:rgb(58, 66, 114)">Depart</label>
+            <input type="text" class="form-control" id="specificSizeInputName" placeholder="31/1/2023" fdprocessedid="ohrjf2">
+        </div>
+
+        <div class="col-sm-3">
+            <label class="visually-" for="specificSizeInputName" style="font-weight: bold; color:rgb(58, 66, 114)">Return</label>
+            <input type="text" class="form-control" id="specificSizeInputName" placeholder="6/3/2023" fdprocessedid="ohrjf2">
+        </div>
+
+        <div class="col-auto" style="padding: 15px;">
+            <button type="submit" class="btn btn-primary" fdprocessedid="afc62g">Search flights</button>
+        </div>
+    </form>
+
+    <link rel="stylesheet" href="info.css">
+    <h3 style="padding: 20px 0 0 40px;">We suggest special trips from Cairo</h3>
+
+    <div style="padding: 40px 0px 0px 20px; display:flex">
+        <div class="card" style="width: 18rem; padding:0px">
+            <img src="/mecca.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Mecca</h3>
+                <h6>Mecca, Saudi Arabia</h6>
+                <p class="card-text">We provide the best services for the convenience of customers, so that we can try to travel to Mecca, the most beloved place for Muslims.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">From 95$ per adult</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">
+                    <div class="card-body" style="padding:.5px">
+                        <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                            <a href="/info.html" style="text-decoration: none;"> Click for more details</a>
+        
+        
+            </div>
+        </a>
+            </div>
+        </div>
+    
+        <div style="padding: 0px 0px 0px 20px; display:flex">
+            <div class="card" style="width: 18rem; padding:0px;">
+                <img src="/dubai.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Dubai</h3>
+                    <h6>Dubai, UAE</h6>
+                    <p class="card-text">The trip with us is different, of course. Let's go to the Emirates and visit one of its best places, Burj Khalifa.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">From 85$  per adult</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">
+                        <div class="card-body" style="padding:.5px">
+                            <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                               <a href="/info.html" style="text-decoration: none;"> Click for more details</a>
+        
+            </div>
+        </a>
+            </div>
+        </div>
+    
+    </div>
+         
+    <div style="padding: 0px 0px 0px 20px; display:flex">
+        <div class="card" style="width: 18rem; padding:0px">
+            <img src="/qatar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Doha</h3>
+                <h6>Doha, Qatar</h6>
+                <p class="card-text">Let's go to Qatar, the best interesting and attention-grabbing tourist places. You will enjoy with us your experience.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">From 70$ per adult</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">
+                    <div class="card-body" style="padding:.5px">
+                        <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                            <a href="/info.html" style="text-decoration: none;"> Click for more details</a>
+        
+    
+        </div>
+    </a>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+    <div style="padding: 0px 0px 0px 20px; display:flex">
+        <div class="card" style="width: 18rem; padding:0px;">
+            <img src="/Tivoli.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Tivoly</h3>
+                <h6>Tivoli, Denmark</h6>
+                <p class="card-text">Tivoli Park is one of the most important parks in Denmark. It's the most famous and popular don't miss shake experience.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">From 129.99$ per adult</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">
+                    <div class="card-body" style="padding:.5px">
+                        <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                            <a href="/info.html" style="text-decoration: none;"> Click for more details</a>
+        
+    
+        </div>
+    </a>
+        </div>
+    </div>
+
+</div>
+     
+<div style="padding: 0px 0px 0px 20px; display:flex">
+    <div class="card" style="width: 18rem; padding:0px">
+        <img src="/rayn.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h3 class="card-title">Rheinfall</h3>
+            <h6>Rheinfall, Swesra</h6>
+            <p class="card-text">The Rhine Falls is the most beautiful place in Switzerland and one of the largest and most important waterfalls in Europe.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">From 105$ per adult</li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">
+                <div class="card-body" style="padding:.5px">
+                    <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        <a href="/info.html" style="text-decoration: none;"> Click for more details</a>
+        
+
+    </div>
+</a>
+    </div>
+</div>
+
+
+</div>
+
+
+
+    </div>
+        </div>
+
+        
+
+<div style="padding:40px;">
+<div class="box">
+    <div id="carouselExampleCaptions" class="carousel slide" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/paris.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Paris</h5>
+                                <p>The Eiffel Tower is the most characteristic of Paris.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Türkiye.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Türkiye</h5>
+                                <p>Some of the wonderful scenery of Turkey.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Giza.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Giza</h5>
+                                <p>The pyramids of Giza are one of the best tourist places in the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 style="padding: 6px 0 2px 10px;">Other amazing trips</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 60px 200px;">
+        <div class="col">
+            <div class="card">
+                <img src="/new zealand.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Queenstown, New Zealand</h5>
+                    <p class="card-text">Queenstown is known the world over as the home of bungee jumping, as well as jet boating, kayaking, and skydiving.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="/korean.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lushan, korean</h5>
+                    <p class="card-text">Lushan Island is one of the most famous islands in the world, it provides many recreational places such as beaches and parks, and it also provides many different therapeutic places.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="/irlanda.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cliffs of Moher, Ireland</h5>
+                    <p class="card-text">The Cliffs of Moher is one of the most beautiful tourist places in Ireland. This region enjoys charming landscapes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="/Gotland.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gotland, Sweden </h5>
+                    <p class="card-text">Gotland is the summer holiday island in southeastern Sweden. To enjoy the natural scenery and pure beaches.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/peles-castle-romania.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Peles-Castle, Romania</h5>
+                    <p class="card-text">peles-castle is considered one of the best places in Romania, distinguished by the magnificence of its architecture and frescoes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/tromso-norway.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tromso, Norway</h5>
+                    <p class="card-text">Tromsø is one of the most beautiful tourist places in Norway and is distinguished by the Northern Lights, which attract tourists from all over the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>For you</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acount</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sign in</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Security</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Explore</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">News</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Airports</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Flights </a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Airlines</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Countries / Regions </a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Connect with x-air</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook </a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram </a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Help </a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy settings </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+                <center>
+                    <p>&copy; 2023 Made Withe Hazem Mohamed.</p>
+                </center>
+
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
+</body>
+
+
+</html>

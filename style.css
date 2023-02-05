@@ -1,0 +1,12 @@
+header {
+    height: 50vh;
+    min-height: 360px;
+    background-size: cover;
+    background-image: url("xt.jpg");
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        background-position: 20% 33%;
+    }
+}
